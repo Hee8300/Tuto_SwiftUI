@@ -11,6 +11,10 @@
 		EC0819E526FF01C5001C3F48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0819E426FF01C5001C3F48 /* ContentView.swift */; };
 		EC0819E726FF01C6001C3F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0819E626FF01C6001C3F48 /* Assets.xcassets */; };
 		EC0819EA26FF01C6001C3F48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0819E926FF01C6001C3F48 /* Preview Assets.xcassets */; };
+		EC0819F22701441E001C3F48 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0819F12701441E001C3F48 /* CircleImage.swift */; };
+		EC0819F4270145C5001C3F48 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0819F3270145C5001C3F48 /* MapView.swift */; };
+		EC6051782701A48300B2F823 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = EC6051772701A48300B2F823 /* landmarkData.json */; };
+		EC60517A2701A49E00B2F823 /* LandMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6051792701A49E00B2F823 /* LandMark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		EC0819E626FF01C6001C3F48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC0819E926FF01C6001C3F48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC0819EB26FF01C6001C3F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC0819F12701441E001C3F48 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		EC0819F3270145C5001C3F48 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		EC6051772701A48300B2F823 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		EC6051792701A49E00B2F823 /* LandMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +60,12 @@
 		EC0819E126FF01C5001C3F48 /* uiswi */ = {
 			isa = PBXGroup;
 			children = (
+				EC0819F5270145C9001C3F48 /* AboutUI */,
+				EC6051792701A49E00B2F823 /* LandMark.swift */,
 				EC0819E226FF01C5001C3F48 /* uiswiApp.swift */,
-				EC0819E426FF01C5001C3F48 /* ContentView.swift */,
 				EC0819E626FF01C6001C3F48 /* Assets.xcassets */,
 				EC0819EB26FF01C6001C3F48 /* Info.plist */,
+				EC6051772701A48300B2F823 /* landmarkData.json */,
 				EC0819E826FF01C6001C3F48 /* Preview Content */,
 			);
 			path = uiswi;
@@ -67,6 +77,16 @@
 				EC0819E926FF01C6001C3F48 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC0819F5270145C9001C3F48 /* AboutUI */ = {
+			isa = PBXGroup;
+			children = (
+				EC0819E426FF01C5001C3F48 /* ContentView.swift */,
+				EC0819F12701441E001C3F48 /* CircleImage.swift */,
+				EC0819F3270145C5001C3F48 /* MapView.swift */,
+			);
+			path = AboutUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +148,7 @@
 			files = (
 				EC0819EA26FF01C6001C3F48 /* Preview Assets.xcassets in Resources */,
 				EC0819E726FF01C6001C3F48 /* Assets.xcassets in Resources */,
+				EC6051782701A48300B2F823 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0819E526FF01C5001C3F48 /* ContentView.swift in Sources */,
+				EC60517A2701A49E00B2F823 /* LandMark.swift in Sources */,
+				EC0819F4270145C5001C3F48 /* MapView.swift in Sources */,
 				EC0819E326FF01C5001C3F48 /* uiswiApp.swift in Sources */,
+				EC0819F22701441E001C3F48 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
