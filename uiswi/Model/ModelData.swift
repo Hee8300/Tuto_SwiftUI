@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import Combine
 
-//앱의 기본 번들에서 지정된 이름의 JSON 데이터를 가져오는 로드(_:) 메서드를 만듭니다.
-var landmarks: [Landmark] = load("landmarkData.json")
+final class ModelData: ObservableObject {
+    //앱의 기본 번들에서 지정된 이름의 JSON 데이터를 가져오는 로드(_:) 메서드를 만듭니다.
+    @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

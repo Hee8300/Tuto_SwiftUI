@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LandMarkLow: View {
+struct LandMarkRow: View {
     var landmark : Landmark
     
     var body: some View {
@@ -18,15 +18,23 @@ struct LandMarkLow: View {
             Text(landmark.name)
             
             Spacer()
+            
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
+
         }
     }
 }
 
-struct LandMarkLow_Previews: PreviewProvider {
+struct LandMarkRow_Previews: PreviewProvider {
+    static var landmarks = ModelData().landmarks
+    
     static var previews: some View {
         Group {
-            LandMarkLow(landmark: landmarks[0])
-            LandMarkLow(landmark: landmarks[1])
+            LandMarkRow(landmark: landmarks[0])
+            LandMarkRow(landmark: landmarks[1])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }

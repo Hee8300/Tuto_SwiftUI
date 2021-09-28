@@ -16,6 +16,8 @@ struct Landmark: Hashable, Codable, Identifiable {
     var state: String
     var description: String
     
+    var isFavorite : Bool
+    
     //데이터에서 이미지 이름을 읽을 imageName 속성 추가
     private var imageName : String
     var image: Image {
